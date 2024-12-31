@@ -1,0 +1,119 @@
+#root {
+  background-image:
+          url('./images/backgroundLines.svg'),
+          url('./images/pathLittle.svg'),
+          url('./images/pathBig.svg'),
+          url('./images/circles1.svg'),
+          url('./images/circles2.svg'),
+          url('./images/background.png');
+  background-size:  cover, auto, auto, auto, auto, cover;
+  background-position: center, right 76px, left bottom, 44px 0, 938px 534px, 90% 90%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  max-width: 100vw;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: inherit;
+  margin: 40px auto 114px;
+  display: flex;
+  width: min-content;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.logoBlock {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--spacing-200);
+  font-family: "Fira Code", serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--neutral-0);
+  width: max-content;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 915px;
+  width: max-content;
+  row-gap: var(--spacing-250);
+  color: var(--neutral-0);
+}
+
+.subtitle {
+  color: var(--neutral-300);
+}
+
+.form {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-300);
+}
+
+.submitButton {
+  min-height: 54px;
+  font-weight: 800 !important;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: var(--neutral-900);
+  background: var(--orange-500);
+}
+
+.submitButton:hover {
+  background: var(--orange-700) !important;
+  box-shadow: 0 4px 0 0 var(--orange-500);
+}
+
+.submitButton:focus, .fieldBlock:active {
+  box-shadow: 0 0 0 3px #0D082D, 0 0 0 5px var(--neutral-500);
+}
+
+@media (max-width: 768px) {
+  #root {
+    background-image:
+            url('./images/backgroundLines.svg'),
+            url('./images/pathLittle.svg'),
+            url('./images/pathBig.svg'),
+            url('./images/circles1.svg'),
+            url('./images/circles2.svg'),
+            url('./images/background.png');
+    background-size: cover, 100px, 400px, 100px, 120px, cover;
+    background-position: center, right 24px, -120px bottom, -15px 0, 320px 50%, 55% 70%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+
+  .page {
+    margin: 33px 16px 114px;
+    row-gap: var(--spacing-500);
+    width: auto;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .logoBlock {
+    height: 25px;
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .logoBlock svg {
+    height: 24px;
+  }
+
+  .title {
+    max-width: inherit;
+    width: 100%;
+  }
+}

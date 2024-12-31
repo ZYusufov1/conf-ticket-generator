@@ -1,0 +1,76 @@
+.text-preset-1 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 800; /* ExtraBold */
+    font-size: 60px;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+.text-preset-2 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+.text-preset-3 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 700; /* Bold */
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -1px;
+}
+
+.text-preset-4 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+}
+
+.text-preset-5 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 500; /* Medium */
+    font-size: 20px;
+    line-height: 110%;
+    letter-spacing: -0.5px;
+}
+
+.text-preset-6 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+
+.text-preset-7 {
+    font-family: "Inconsolata", sans-serif;
+    font-weight: 400; /* Regular */
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+}
+
+@media (max-width: 768px) {
+    .text-preset-1 {
+        font-size: 30px;
+    }
+    .text-preset-2 {
+        font-size: 24px;
+    }
+    .text-preset-3 {
+        font-size: 22px;
+    }
+    .text-preset-4 {
+        font-size: 20px;
+    }
+    .text-preset-4 {
+        font-size: 20px;
+    }
+    .text-preset-6 {
+        font-size: 14px;
+    }
+}
