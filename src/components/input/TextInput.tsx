@@ -1,13 +1,13 @@
 import classNames from 'classnames'
 // @ts-ignore
 import ErrorInfoIcon from './../../images/errorInfo.svg?react'
-import { FC } from 'react'
+import React, { ChangeEvent, FC } from 'react'
 import './Input.css'
 
 interface ITextInputProps {
     value: string | undefined,
-    onChange: (e) => void,
-    onBlur?: (e) => void,
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void,
+    onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void,
     title: string,
     placeholder?: string,
     type: string,

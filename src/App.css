@@ -48,6 +48,16 @@
   color: var(--neutral-0);
 }
 
+.name {
+  background: linear-gradient(90deg, #F57463 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.email {
+  color: var(--orange-500);
+}
+
 .subtitle {
   color: var(--neutral-300);
 }
@@ -67,15 +77,19 @@
   outline: none;
   color: var(--neutral-900);
   background: var(--orange-500);
+  box-shadow: 0 4px 0 0 var(--orange-500);
 }
 
 .submitButton:hover {
   background: var(--orange-700) !important;
-  box-shadow: 0 4px 0 0 var(--orange-500);
 }
 
 .submitButton:focus, .fieldBlock:active {
   box-shadow: 0 0 0 3px #0D082D, 0 0 0 5px var(--neutral-500);
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
 }
 
 @media (max-width: 768px) {

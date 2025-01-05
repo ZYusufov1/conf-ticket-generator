@@ -1,0 +1,106 @@
+.ticket {
+    height: 280px;
+}
+
+.logoTicketBlock {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: var(--spacing-250);
+    left: 24px;
+    top: -260px;
+}
+
+.logoTicketBlock > svg {
+    width: 40px;
+    height: 40px;
+}
+
+.labelTicket {
+    display: inherit;
+    flex-direction: column;
+    gap: var(--spacing-150);
+}
+
+.imgAndInfo {
+    display: flex;
+    left: 24px;
+    top: -190px;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-200);
+}
+
+.imgAndInfo > img{
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.info {
+    display: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-100);
+}
+
+.git {
+    display: inherit;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.numberTicket {
+    position: relative;
+    top: -320px;
+    left: 510px;
+    width: min-content;
+    transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+    .ticket > svg {
+        width: 343px;
+        height: 160px;
+    }
+
+    .logoTicketBlock {
+        gap: var(--spacing-150);
+        left: 16px;
+        top: -148px;
+    }
+
+    .logoTicketBlock > svg {
+        width: 29px;
+        height: 29px;
+    }
+
+    .labelTicket {
+        gap: var(--spacing-100);
+    }
+
+    .imgAndInfo {
+        left: 16px;
+        top: -120px;
+        gap: var(--spacing-150);
+    }
+
+    .imgAndInfo > img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .info {
+        gap: var(--spacing-050);
+    }
+
+    .git {
+        gap: var(--spacing-050);
+    }
+
+    .numberTicket {
+        top: -190px;
+        left: 290px;
+    }
+}
