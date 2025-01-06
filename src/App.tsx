@@ -147,6 +147,7 @@ function App() {
                         />
 
                         <button
+                            aria-label="Submit option"
                             className={classNames('submitButton', 'text-preset-5')}
                             onClick={() => setIsSubmit(true)}
                             disabled={(!image || !fullName || errorEmail  && !userGit)}

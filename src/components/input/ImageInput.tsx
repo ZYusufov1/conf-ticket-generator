@@ -66,6 +66,7 @@ const ImageInput: FC<ITextInputProps> = ({
 
                         <div className={'groupButtons'}>
                             <button
+                                aria-label="Remove option"
                                 onClick={() => setImage(null)}
                                 className={'text-preset-7'}
                                 style={{
@@ -79,6 +80,7 @@ const ImageInput: FC<ITextInputProps> = ({
                             </button>
 
                             <button
+                                aria-label="Change option"
                                 onClick={handleChangeImageClick}
                                 className={'text-preset-7'}
                             >
